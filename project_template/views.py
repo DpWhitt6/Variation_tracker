@@ -5,11 +5,3 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello, world. You're at the index view.")
 
-def form_view(request):
-    if request.method == 'POST':
-        # Handle form submission
-        pass
-    else:
-        # Render the form
-        pass
-    return render(request, 'form_template.html')
